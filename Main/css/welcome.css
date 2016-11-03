@@ -46,8 +46,9 @@ p {
   height: 40%;
 }
 
-.tier1 {
-  background-color: #25CED1;
+.box1 {
+  border-style: solid;
+  border-color: #25CED1;
 }
 
 .tier2 {
