@@ -42,21 +42,106 @@ p {
   margin-top: 200px;
 }
 
-.tier1, .tier2, .tier3 {
-  height: 40%;
+.boxes-padding {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
+
+.box {
+  height: 60%;
+  width: 29.16666666667%;
+  padding-top: 2.5%;
+  margin-right: 1.56%;
+  margin-left: 1.56%;
+  align-items: center;
+  justify-content: center;
+  border-width: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+img.shrink{
+    width: 100%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+  .box {
+    height: 55vh;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 750px) {
+  .box {
+    height: 55vh;
+    width: 259px;
+    margin: 10% 25% 10% 25%;
+    display: block;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 415px) {
+  .box {
+    height: 55vh;
+    width: 80%;
+    margin: 10% 10% 10% 10%;
+    display: block;
+    vertical-align: top;
+  }
+}
+
+@media (max-width: 320px) {
+  .box {height: 60vh;}
+  h3 {font-size: 1.5em;}
+  img.shrink {width: 80%;}
+}
+
+
+.box:active {
+  background-color: #C9C9C9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.boxes-background {
+  background-color: #DDDDDD;
+}
+
+/*.text-box {
+  background-color: gray;
+  position:absolute;
+  bottom: 0;
+}*/
 
 .box1 {
+  background-color: #FFFFFF;
   border-style: solid;
   border-color: #25CED1;
+  box-shadow: 8px 8px 5px -5px RGBA(0,0,0,.6),
+  inset -3px -3px 5px 0px RGBA(255,255,255,.4);
 }
 
-.tier2 {
-  background-color: #FFA035;
+.box2 {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #FFA035;
+  box-shadow: 8px 8px 5px -5px RGBA(0,0,0,.6),
+  inset -3px -3px 5px 0px RGBA(255,255,255,.4);
 }
 
-.tier3{
-  background-color: #FFEB3F;
+.box3{
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-color: #FFEB3F;
+  box-shadow: 8px 8px 5px -5px RGBA(0,0,0,.6),
+  inset -3px -3px 5px 0px RGBA(255,255,255,.4);
 }
 
 .articleImage {
@@ -65,37 +150,17 @@ p {
 
 
 
-img.shrink{
-    width:50%;
-    height: auto;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-
-.thick-black-border{
-   border-color: black;
-   border-width: 10px;
-   border-style: solid;
-}
-
 .thin-yellow-border{
    border-color: yellow;
    border-width: 5px;
    border-style: solid;
 }
-/*
-.container{
-   margin-top: 50px;
-   margin-bottom: 50px;
-}*/
+
 
  .banner {
      padding: 100px 0;
-     color: #2134A0;
-     background-color: #002080;
+     color: #FFFFFF;
+     background-color: #8663C6;
      background-size: cover;
  }
 
