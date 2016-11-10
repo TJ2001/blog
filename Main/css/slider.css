@@ -1,0 +1,43 @@
+.numberMenu {
+
+  list-style: none;
+  position: absolute;
+
+  left: 7.5%;
+  top: 7.5%;
+
+}
+
+.numberMenu li {
+  background-color: lightgreen;
+  width: 30px;
+  margin: none;
+  display: inline-block;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+
+
+.card {
+  width: 500px;
+  height: 600px;
+  background-color: lightblue;
+
+  transition: transform 300ms ease-in-out;
+}
+
+/*.card:hover {
+  transform: translate(200px, 150px);
+}*/
+
+.card.clicked{
+  transform: translate(0, -150px);
+}
+
+.center-div
+{
+     margin: 0 auto;
+     width: 50vw;
+}

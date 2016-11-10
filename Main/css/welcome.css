@@ -61,12 +61,12 @@ p {
 }
 
 img.shrink{
-    width: 100%;
-    height: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 50%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -168,6 +168,12 @@ img.shrink{
     width: 150px;
     height: 60px;
  }
+
+/*.button-border {
+  border-color: blue;
+  border-width: 5px;
+  border-style: solid;
+}*/
 
 #email {
    background-color: white;
