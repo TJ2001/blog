@@ -25,16 +25,23 @@
   height: 600px;
   background-color: lightblue;
 
-  transition: transform 300ms ease-in-out;
 }
 
 /*.card:hover {
   transform: translate(200px, 150px);
 }*/
 
-.card.clicked{
-  transform: translate(0, -150px);
+.card1, .card2, .card3 {
+  transition: transform 300ms ease-in-out;
 }
+
+.card1.clicked, .card2.clicked, .card3.clicked {
+  transform: translate(0, -100vh);
+}
+
+/*.card2, .card3 {
+  display: none;
+}*/
 
 .center-div
 {
