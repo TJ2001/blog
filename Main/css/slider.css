@@ -1,11 +1,15 @@
-.numberMenu {
+.card2 {
+  display: none;
+  background-color: pink;
+}
 
+
+.numberMenu {
   list-style: none;
   position: absolute;
 
   left: 7.5%;
   top: 7.5%;
-
 }
 
 .numberMenu li {
@@ -18,30 +22,59 @@
   border-color: black;
 }
 
+.wrapper {
+  /*background-color: red;*/
+  padding: 100px;
+}
 
 
 .card {
   width: 500px;
   height: 600px;
-  background-color: lightblue;
-
+  margin-top: 100px;
+  transition: transform 300ms ease-in-out;
 }
 
 /*.card:hover {
   transform: translate(200px, 150px);
 }*/
 
-.card1, .card2, .card3 {
-  transition: transform 300ms ease-in-out;
+.card1 {
+  background-color: lightblue;
+}
+
+
+/*
+.card2.appear {
+  display: block;
+}*/
+
+.card3 {
+  background-color: orange;
 }
 
 .card1.clicked, .card2.clicked, .card3.clicked {
-  transform: translate(0, -100vh);
+  transform: translate(0, 100vh);
+}
+
+.card1.disappear {
+  display: none;
 }
 
 /*.card2, .card3 {
   display: none;
 }*/
+
+
+
+.card2.clicked {
+  display: block;
+  /*transform: translate(0, -150vh);*/
+}
+
+.card3.clicked {
+  display: block;
+}
 
 .center-div
 {

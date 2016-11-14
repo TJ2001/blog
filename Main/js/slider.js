@@ -2,30 +2,40 @@ $( document ).ready(function() {
   $('.trigger1').click(function(){
     if($('.card1').hasClass('clicked')){
       $('.card1').removeClass('clicked');
-      // $('.card').addClass('maximized');
+      $('.card1').removeClass('disappear');
     }else{
-    // $(this).removeClass('maximized');
-    $('.card1').addClass('clicked');
+      $('.card1').addClass('clicked');
+      setTimeout(function(){
+        $('.card1').addClass('disappear');
+      }, 500);
     }
   });
+
+
+  // $('.trigger1').click(function(){
+  //   if($('.card1').hasClass('clicked')){
+  //     $('.card1').removeClass('clicked');
+  //   }else{
+  //   $('.card1').addClass('clicked');
+  //   }
+  // });
 
   $('.trigger2').click(function(){
     if($('.card2').hasClass('clicked')){
       $('.card2').removeClass('clicked');
-      // $('.card').addClass('maximized');
     }else{
-    // $(this).removeClass('maximized');
     $('.card2').addClass('clicked');
     }
   });
 
   $('.trigger3').click(function(){
     if($('.card3').hasClass('clicked')){
-      $('.card1').removeClass('clicked');
-      // $('.card').addClass('maximized');
+      $('.card3').removeClass('clicked');
     }else{
-    // $(this).removeClass('maximized');
     $('.card3').addClass('clicked');
     }
   });
 });
+
+
+// move it up. then disappear. then appear card two.
