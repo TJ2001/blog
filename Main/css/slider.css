@@ -1,13 +1,6 @@
-.card2 {
-  display: none;
-  background-color: pink;
-}
-
-
 .numberMenu {
   list-style: none;
   position: absolute;
-
   left: 7.5%;
   top: 7.5%;
 }
@@ -22,17 +15,47 @@
   border-color: black;
 }
 
-.wrapper {
-  /*background-color: red;*/
+/*.wrapper {
   padding: 100px;
-}
+}*/
 
+.artificial-margin {
+  height: 15vh;
+}
 
 .card {
   width: 500px;
   height: 600px;
-  margin-top: 100px;
+  margin-top: 500px;
   transition: transform 300ms ease-in-out;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1.25s;
+  animation-duration: 1.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
 }
 
 /*.card:hover {
@@ -40,21 +63,25 @@
 }*/
 
 .card1 {
+  /*display: none;*/
   background-color: lightblue;
 }
 
+.card2 {
+  display: none;
+  background-color: pink;
+}
 
-/*
 .card2.appear {
   display: block;
-}*/
+}
 
 .card3 {
   background-color: orange;
 }
 
-.card1.clicked, .card2.clicked, .card3.clicked {
-  transform: translate(0, 100vh);
+.card1.fly, .card2.fly, .card3.fly {
+  transform: translate(0, -100vh);
 }
 
 .card1.disappear {
