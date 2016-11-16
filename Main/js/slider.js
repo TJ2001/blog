@@ -8,10 +8,12 @@ $( document ).ready(function() {
       $('.card2').addClass('fly');
       setTimeout(function(){
         $('.card2').removeClass('appear');
+        $('#card1').removeClass('disappear');
       }, 500);
       $('.card1').addClass('fadeInUp');
       $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $('#card1').removeClass('fadeInUp');
+        $('.card2').removeClass('fly');
       });
       // $('.card1').removeClass('fly');
       // $('.card1').removeClass('disappear');
@@ -40,7 +42,7 @@ $( document ).ready(function() {
       $('#card2').addClass('animated fadeInUp');
       $('#card2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
         $('#card2').removeClass('fadeInUp');
-        $('#card1').removeClass('disappear');
+
     })
   });
 
