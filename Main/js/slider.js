@@ -23,12 +23,14 @@ $( document ).ready(function() {
     //   $('.card2').addClass('appear');
     // }else{
       $('.card1').addClass('fly');
-      setTimeout(function(){
-        $('.card1').addClass('disappear');
-        $('.card2').addClass('appear');
-      }, 500);
-
-    // }
+      // setTimeout(function(){
+      //   $('.card1').addClass('disappear');
+      //   $('.card2').addClass('appear');
+      // }, 500);
+      $('#card2').addClass('animated fadeInUp appear');
+      $('#card2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card2').removeClass('fadeInUp');
+    })
   });
 
   // $('.trigger3').click(function(){
