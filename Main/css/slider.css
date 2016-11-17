@@ -27,7 +27,7 @@
   width: 500px;
   height: 600px;
   margin-top: 500px;
-  transition: transform 300ms ease-in-out;
+  transition: transform 400ms ease-in-out;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -75,11 +75,12 @@
   background-color: pink;
 }
 
-.card2.appear {
+.card2.appear, .card3.appear {
   display: block;
 }
 
 .card3 {
+  display: none;
   background-color: orange;
 }
 
