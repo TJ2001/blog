@@ -31,4 +31,16 @@ $( document ).ready(function() {
       $('#card2').removeClass('fadeInUp');
     })
   });
+  $('.trigger3').click(function(){
+    $('.card2').addClass('fly');
+    $('.card3').addClass('appear');
+    setTimeout(function(){
+      $('.card2').addClass('disappear');
+      $('.card2').removeClass('fly');
+    }, 500);
+    $('#card3').addClass('animated fadeInUp');
+    $('#card3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $('#card3').removeClass('fadeInUp');
+    })
+  });
 });
