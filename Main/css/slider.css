@@ -66,7 +66,7 @@
 }*/
 
 .card1 {
-  /*display: none;*/
+  display: none;
   background-color: lightblue;
 }
 
@@ -75,22 +75,24 @@
   background-color: pink;
 }
 
-.card2.appear, .card3.appear {
-  display: block;
-}
-
 .card3 {
   display: none;
   background-color: orange;
 }
 
+
+.card1.appear, .card2.appear, .card3.appear{
+  display: block;
+}
+
+
 .card1.fly, .card2.fly, .card3.fly {
   transform: translate(0, -100vh);
 }
-
+/*
 .card1.disappear {
   display: none;
-}
+}*/
 
 /*.card2, .card3 {
   display: none;
