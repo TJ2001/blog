@@ -7,7 +7,7 @@
 
 .numberMenu li {
   background-color: lightgreen;
-  width: 30px;
+  width: 50px;
   margin: none;
   display: inline-block;
   border-width: 5px;
@@ -27,7 +27,7 @@
   width: 500px;
   height: 600px;
   margin-top: 500px;
-  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-out;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -39,7 +39,7 @@
 
 .animated {
   -webkit-animation-duration: 400ms;
-  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in;
   animation-duration: 400ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
@@ -60,10 +60,6 @@
 .fadeInUp {
   animation-name: fadeInUp;
 }
-
-/*.card:hover {
-  transform: translate(200px, 150px);
-}*/
 
 .card1 {
   display: none;
@@ -100,13 +96,11 @@
   background-color: black;
 }
 
-
 .card1.appear, .card2.appear, .card3.appear, .card4.appear, .card5.appear {
   display: block;
 }
 
-
-.card1.fly, .card2.fly, .card3.fly, .card4.fly, .card5.appear {
+.card1.fly, .card2.fly, .card3.fly, .card4.fly, .card5.fly {
   transform: translate(0, -100vh);
 }
 /*
