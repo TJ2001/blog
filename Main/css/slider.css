@@ -101,12 +101,12 @@
 }
 
 
-.card1.appear, .card2.appear, .card3.appear, .card4.appear{
+.card1.appear, .card2.appear, .card3.appear, .card4.appear, .card5.appear {
   display: block;
 }
 
 
-.card1.fly, .card2.fly, .card3.fly, .card4.fly {
+.card1.fly, .card2.fly, .card3.fly, .card4.fly, .card5.appear {
   transform: translate(0, -100vh);
 }
 /*
@@ -132,6 +132,11 @@
 .card4.clicked {
   display: block;
 }
+
+.card5.clicked {
+  display: block;
+}
+
 
 .center-div
 {
