@@ -8,6 +8,7 @@
 // 9. Create card7, Get transition from card6 to card7
 
 $( document ).ready(function() {
+
   $('#card1').addClass('appear');
   $('#card1').addClass('fadeInUp');
   $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -36,6 +37,50 @@ $( document ).ready(function() {
         $('#card1').removeClass('fadeInUp');
         $('.card3').removeClass('fly');
       });
+    } else if($('.card4').hasClass('appear')) {
+      $('.card4').addClass('fly');
+      setTimeout(function(){
+        $('.card4').removeClass('appear');
+        $('#card1').addClass('appear');
+      }, 500);
+      $('.card1').addClass('fadeInUp');
+      $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card1').removeClass('fadeInUp');
+        $('.card4').removeClass('fly');
+      });
+    } else if($('.card5').hasClass('appear')) {
+      $('.card5').addClass('fly');
+      setTimeout(function(){
+        $('.card5').removeClass('appear');
+        $('#card1').addClass('appear');
+      }, 500);
+      $('.card1').addClass('fadeInUp');
+      $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card1').removeClass('fadeInUp');
+        $('.card5').removeClass('fly');
+      });
+    } else if($('.card6').hasClass('appear')) {
+      $('.card6').addClass('fly');
+      setTimeout(function(){
+        $('.card6').removeClass('appear');
+        $('#card1').addClass('appear');
+      }, 500);
+      $('.card1').addClass('fadeInUp');
+      $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card1').removeClass('fadeInUp');
+        $('.card6').removeClass('fly');
+      });
+    } else if($('.card7').hasClass('appear')) {
+      $('.card7').addClass('fly');
+      setTimeout(function(){
+        $('.card7').removeClass('appear');
+        $('#card1').addClass('appear');
+      }, 500);
+      $('.card1').addClass('fadeInUp');
+      $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card1').removeClass('fadeInUp');
+        $('.card7').removeClass('fly');
+      });
     }
   });
 
@@ -51,12 +96,23 @@ $( document ).ready(function() {
         $('#card2').removeClass('fadeInUp');
         $('.card3').removeClass('fly');
       });
-    } else {
+    } else if($('.card1').hasClass('appear')) {
       $('.card1').addClass('fly');
       $('.card2').addClass('appear');
       setTimeout(function(){
         $('.card1').removeClass('appear');
         $('.card1').removeClass('fly');
+      }, 500);
+      $('#card2').addClass('animated fadeInUp');
+      $('#card2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card2').removeClass('fadeInUp');
+      });
+    } else if($('.card4').hasClass('appear')) {
+      $('.card4').addClass('fly');
+      $('.card2').addClass('appear');
+      setTimeout(function(){
+        $('.card4').removeClass('appear');
+        $('.card4').removeClass('fly');
       }, 500);
       $('#card2').addClass('animated fadeInUp');
       $('#card2').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
@@ -68,7 +124,6 @@ $( document ).ready(function() {
   $('.trigger3').click(function(){
     if($('.card1').hasClass('appear')) {
       $('.card1').addClass('fly');
-
       setTimeout(function(){
         $('.card1').removeClass('appear');
         $('.card1').removeClass('fly');
@@ -79,6 +134,17 @@ $( document ).ready(function() {
         $('#card3').removeClass('fadeInUp');
         $('.card1').removeClass('fly');
       });
+    } else if($('.card4').hasClass('appear')) {
+      $('.card4').addClass('fly');
+      $('.card3').addClass('appear');
+      setTimeout(function(){
+        $('.card4').removeClass('appear');
+        $('.card4').removeClass('fly');
+      }, 500);
+      $('#card3').addClass('animated fadeInUp');
+      $('#card3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card3').removeClass('fadeInUp');
+      })
     } else {
         $('.card2').addClass('fly');
         $('.card3').addClass('appear');
@@ -89,6 +155,45 @@ $( document ).ready(function() {
         $('#card3').addClass('animated fadeInUp');
         $('#card3').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
           $('#card3').removeClass('fadeInUp');
+        })
+    }
+  });
+
+  $('.trigger4').click(function(){
+    console.log("being clikced");
+    if($('.card1').hasClass('appear')) {
+      $('.card1').addClass('fly');
+      $('.card4').addClass('appear');
+      setTimeout(function(){
+        $('.card1').removeClass('appear');
+        $('.card1').removeClass('fly');
+      }, 500);
+      $('#card4').addClass('animated fadeInUp');
+      $('#card4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $('#card4').removeClass('fadeInUp');
+      })
+
+    } else if($('.card2').hasClass('appear')) {
+        $('.card2').addClass('fly');
+        $('.card4').addClass('appear');
+        setTimeout(function(){
+          $('.card2').removeClass('appear');
+          $('.card2').removeClass('fly');
+        }, 500);
+        $('#card4').addClass('animated fadeInUp');
+        $('#card4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $('#card4').removeClass('fadeInUp');
+        })
+    } else if($('.card3').hasClass('appear')) {
+        $('.card3').addClass('fly');
+        $('.card4').addClass('appear');
+        setTimeout(function(){
+          $('.card3').removeClass('appear');
+          $('.card3').removeClass('fly');
+        }, 500);
+        $('#card4').addClass('animated fadeInUp');
+        $('#card4').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+          $('#card4').removeClass('fadeInUp');
         })
     }
   });

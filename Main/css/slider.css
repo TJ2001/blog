@@ -80,13 +80,33 @@
   background-color: orange;
 }
 
+.card4 {
+  display: none;
+  background-color: red;
+}
 
-.card1.appear, .card2.appear, .card3.appear{
+.card5 {
+  display: none;
+  background-color: green;
+}
+
+.card6 {
+  display: none;
+  background-color: pink;
+}
+
+.card7 {
+  display: none;
+  background-color: black;
+}
+
+
+.card1.appear, .card2.appear, .card3.appear, .card4.appear{
   display: block;
 }
 
 
-.card1.fly, .card2.fly, .card3.fly {
+.card1.fly, .card2.fly, .card3.fly, .card4.fly {
   transform: translate(0, -100vh);
 }
 /*
@@ -106,6 +126,10 @@
 }
 
 .card3.clicked {
+  display: block;
+}
+
+.card4.clicked {
   display: block;
 }
 
