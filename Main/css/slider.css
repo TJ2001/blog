@@ -96,11 +96,11 @@
   background-color: black;
 }
 
-.card1.appear, .card2.appear, .card3.appear, .card4.appear, .card5.appear {
+.card1.appear, .card2.appear, .card3.appear, .card4.appear, .card5.appear, .card6.appear, .card7.appear {
   display: block;
 }
 
-.card1.fly, .card2.fly, .card3.fly, .card4.fly, .card5.fly {
+.card1.fly, .card2.fly, .card3.fly, .card4.fly, .card5.fly, .card6.fly, .card7.fly {
   transform: translate(0, -100vh);
 }
 /*
@@ -114,23 +114,9 @@
 
 
 
-.card2.clicked {
-  display: block;
-  /*transform: translate(0, -150vh);*/
-}
-
-.card3.clicked {
+.card2.clicked, .card3.clicked, .card4.clicked, .card5.clicked, .card6.clicked, .card7.clicked {
   display: block;
 }
-
-.card4.clicked {
-  display: block;
-}
-
-.card5.clicked {
-  display: block;
-}
-
 
 .center-div
 {
