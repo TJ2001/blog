@@ -1,6 +1,7 @@
 .numberMenu {
   list-style: none;
   position: absolute;
+  z-index: 4;
   left: 7.5%;
   top: 7.5%;
 }
@@ -61,40 +62,25 @@
   animation-name: fadeInUp;
 }
 
-.card1 {
+.card1, .card2, .card3, .card4, .card5, .card6, .card7 {
   display: none;
-  background-color: lightblue;
+  position: relative;
+  z-index: 3;
 }
 
-.card2 {
-  display: none;
-  background-color: pink;
-}
+.card1 { background-color: lightblue; }
 
-.card3 {
-  display: none;
-  background-color: orange;
-}
+.card2 { background-color: pink; }
 
-.card4 {
-  display: none;
-  background-color: red;
-}
+.card3 { background-color: orange; }
 
-.card5 {
-  display: none;
-  background-color: green;
-}
+.card4 { background-color: red; }
 
-.card6 {
-  display: none;
-  background-color: pink;
-}
+.card5 {  background-color: green; }
 
-.card7 {
-  display: none;
-  background-color: black;
-}
+.card6 { background-color: darkblue; }
+
+.card7 { background-color: black; }
 
 .card1.appear, .card2.appear, .card3.appear, .card4.appear, .card5.appear, .card6.appear, .card7.appear {
   display: block;

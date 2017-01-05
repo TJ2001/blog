@@ -9,11 +9,11 @@ $( document ).ready(function() {
     }
 
 
-  // $(document).on('scroll', function (e) {
-  //   $('.navbar').css('opacity', ($(document).scrollTop() / 500));
-  // });
+  $(document).on('scroll', function (e) {
+    $('.navbar').css('opacity', ($(document).scrollTop() / 500));
+  });
 });
-// 
+//
 // $('.trigger3').click(function(){
 //   $('.card2').addClass('fly');
 //   $('.card3').addClass('appear');

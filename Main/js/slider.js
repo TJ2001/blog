@@ -7,34 +7,83 @@
 // 8. Create card6, Get transition from card5 to card6
 // 9. Create card7, Get transition from card6 to card7
 
-$( document ).ready(function() {
+function Card (index, color) {
+    this.index = index,
+    this.color = color,
+    this.width = "500px",
+    this.height = "500px"
+};
 
-  $('.trigger7').click(function(){
-    console.log("trigger7 clicked");
+Card.prototype.slide2= function(){
+  var trigger = ".trigger" + this.index;
+  var card = ".card" + this.index;
+  var cardId = "#card" + this.index;
+  var card2 = ".card2";
+
+  $(trigger).click(function(){
+    console.log(trigger);
+    console.log(card);
+    console.log(cardId);
+
+    if($(card2).hasClass('appear')) {
+      $(card2).addClass('fly');
+      setTimeout(function(){
+        $(card2).removeClass('appear');
+        $(cardId).addClass('appear');
+      }, 500);
+      $(card).addClass('fadeInUp');
+      $(cardId).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $(cardId).removeClass('fadeInUp');
+        $(card2).removeClass('fly');
+      });
+    }
+  });
+  Card.prototype.slide3= function(){
+    var trigger = ".trigger" + this.index;
+    var card = ".card" + this.index;
+    var cardId = "#card" + this.index;
+    var card2 = ".card2";
+
+    $(trigger).click(function(){
+      console.log(trigger);
+      console.log(card);
+      console.log(cardId);
+
+      if($(card3).hasClass('appear')) {
+
     });
+};
 
 
+
+$( document ).ready(function() {
+var card1 = new Card(1, "blue");
+console.log(card1);
+card1.slide2();
+card1.slide3();
   $('#card1').addClass('appear');
   $('#card1').addClass('fadeInUp');
   $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
     $('#card1').removeClass('fadeInUp');
   });
+
+
   $('.trigger1').click(function(){
-    console.log("trigger1 clicked");
+    // console.log("trigger1 clicked");
 
-    if($('.card2').hasClass('appear')) {
-      $('.card2').addClass('fly');
-      setTimeout(function(){
-        $('.card2').removeClass('appear');
-        $('#card1').addClass('appear');
-      }, 500);
-      $('.card1').addClass('fadeInUp');
-      $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        $('#card1').removeClass('fadeInUp');
-        $('.card2').removeClass('fly');
-      });
-
-    } else if($('.card3').hasClass('appear')) {
+    // if($('.card2').hasClass('appear')) {
+    //   $('.card2').addClass('fly');
+    //   setTimeout(function(){
+    //     $('.card2').removeClass('appear');
+    //     $('#card1').addClass('appear');
+    //   }, 500);
+    //   $('.card1').addClass('fadeInUp');
+    //   $('#card1').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+    //     $('#card1').removeClass('fadeInUp');
+    //     $('.card2').removeClass('fly');
+    //   });
+    // } else
+    if($('.card3').hasClass('appear')) {
       $('.card3').addClass('fly');
       setTimeout(function(){
         $('.card3').removeClass('appear');

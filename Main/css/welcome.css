@@ -23,8 +23,19 @@ p {
    color: #DAAB2B;
 }
 
+.putFront {
+  position: relative;
+  z-index: 4;
+  background-color: white;
+}
+
+.navbar-brand {
+  position: relative;
+  z-index: 5;
+}
+
 .intro-header {
-    padding-top: 225px; /*padding will keep navbar from overlapping and make image bigger*/
+    padding-top: 225px;
     padding-bottom: 225px;
     text-align: center;
     color: #f8f8f8;
@@ -35,6 +46,7 @@ p {
 #darksubtext {
    color:yellow;
 }
+
 
 .title {
   font-family: 'Yesteryear', cursive;
