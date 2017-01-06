@@ -40,7 +40,7 @@
 
 .animated {
   -webkit-animation-duration: 400ms;
-  -webkit-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-out;
   animation-duration: 400ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
